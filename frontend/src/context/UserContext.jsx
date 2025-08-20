@@ -4,7 +4,6 @@ import { useState } from "react";
 import { createContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
-import { analytics } from "../config/FirebaseConfig";
 
 
 
@@ -31,7 +30,6 @@ export default function UserContext({ children }) {
     }
   };
   useEffect(() => {
-    console.log(analytics)
     getUserData();
   
   }, []);
